@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Snowfro</title>
+</head>
+
+<body>
+
+    <!-- header -->
+
+    <button onclick="topFunction()" id="topbutton" title="Go to top">To the sky!</button>
+
+    <div class="gallery-header">
+        <a href="../index.html#graphics"><h1>Snowfro</h1></a>
+        <div class="transition3"></div>
+    </div>
+    <div class="gallery">
+        <img src="../img/graphics/gallery/1.jpg">
+        <img src="../img/graphics/gallery/2.jpg">
+        <img src="../img/graphics/gallery/3.jpg">
+        <img src="../img/graphics/gallery/4.jpg">
+        <img src="../img/graphics/gallery/5.jpg">
+        <img src="../img/graphics/gallery/6.jpg">
+        <img src="../img/graphics/gallery/7.jpg">
+        <img src="../img/graphics/gallery/8.jpg">
+        <img src="../img/graphics/gallery/9.jpg">
+        <img src="../img/graphics/gallery/10.jpg">
+        <img src="../img/graphics/gallery/11.jpg">
+        <img src="../img/graphics/gallery/12.jpg">
+        <img src="../img/graphics/gallery/13.jpg">
+        <img src="../img/graphics/gallery/14.jpg">
+        <img src="../img/graphics/gallery/15.jpg">
+        <img src="../img/graphics/gallery/16.jpg">
+        <img src="../img/graphics/gallery/17.jpg">
+        <img src="../img/graphics/gallery/18.jpg">
+        <img src="../img/graphics/gallery/19.jpg">
+        <img src="../img/graphics/gallery/20.jpg">
+        <img src="../img/graphics/gallery/21.jpg">
+        <img src="../img/graphics/gallery/22.jpg">
+        <img src="../img/graphics/gallery/23.jpg">
+        <img src="../img/graphics/gallery/24.jpg">
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer">
+        <p class="footer-center">Website coded and designed by Snowfro</p>
+    </div>
+
+    <script>
+        let mybutton = document.getElementById("topbutton");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 220 || document.documentElement.scrollTop > 220) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

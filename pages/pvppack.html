@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" href="../img/icons/snowflake.png"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>Snowfro</title>
+</head>
+
+<body>
+    
+    <!-- header -->
+
+    <button onclick="topFunction()" id="topbutton" title="Go to top">To the sky!</button>
+
+    <div class="project-page-header">
+        <a href="../index.html#projects"><h1>Snowfro</h1></a>
+        <div class="transition3"></div>
+    </div>
+    <div class="project-page-container">
+        <div class="project-page">
+            <iframe width="896" height="504" src="https://www.youtube.com/embed/J6s53tk0wME" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h1>Snowfrost 16x</h1>
+            <p> The best 1.19 default style pvp texture pack out there! This pack was made to enhance and improve your minecraft viewing experience.</p>
+            <h1>Pack Info</h1>
+            <div class="swiper-container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="../img/projects/slider/pvppack/1.png"></div>
+                        <div class="swiper-slide"><img src="../img/projects/slider/pvppack/2.png"></div>
+                        <div class="swiper-slide"><img src="../img/projects/slider/pvppack/3.png"></div>
+                        <div class="swiper-slide"><img src="../img/projects/slider/pvppack/4.png"></div>
+                        <div class="swiper-slide"><img src="../img/projects/slider/pvppack/5.png"></div>
+                        <div class="swiper-slide"><img src="../img/projects/slider/pvppack/6.png"></div>
+                        <div class="swiper-slide"><img src="../img/projects/slider/pvppack/7.png"></div>
+                        <div class="swiper-slide"><img src="../img/projects/slider/pvppack/8.png"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <p>
+                <span>
+                - Version: 1.19 <br>
+                - Default style <br>
+                - Tinted textures <br>
+                - Better Gui <br>
+                - Custom shield <br>
+                - Low fire <br>
+                - Lowered swords <br>
+                - Better tools <br>
+                - Bow indicator <br>
+                - Removes Pumpkin blur <br>
+                - All this, and more!
+                </span>
+            </p>
+            <div class="project-downloads">
+                <h1>Download</h1>
+                <a href="../downloads/§9Snowfrost §f[16x].zip" download>Resource Pack</a>
+            </div>
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a><br />This work is licensed under a <a  target=”_blank” rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer">
+        <p class="footer-center">Website coded and designed by Snowfro</p>
+    </div>
+
+    <script>
+        let mybutton = document.getElementById("topbutton");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 220 || document.documentElement.scrollTop > 220) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            effect: 'fade',
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            dynamicBullets: true,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    </script>
+</body>
+
+</html>

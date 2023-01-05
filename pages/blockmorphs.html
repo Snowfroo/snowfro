@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" href="../img/icons/snowflake.png"/>
+    <title>Snowfro</title>
+</head>
+
+<body>
+    
+    <!-- header -->
+
+    <button onclick="topFunction()" id="topbutton" title="Go to top">To the sky!</button>
+
+    <div class="project-page-header">
+        <a href="../index.html#projects"><h1>Snowfro</h1></a>
+        <div class="transition3"></div>
+    </div>
+    <div class="project-page-container">
+        <div class="project-page">
+            <iframe width="896" height="504" src="https://www.youtube.com/embed/sDGhpvgz7_g" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h1>Block Morphs</h1>
+            <p>This pack allows any player to transform into a one of many block options. It's great for hide and seek!</p>
+            <h1>Pack Info</h1>
+            <p>
+                <span>
+                - Version: 1.19 <br>
+                - 10 total block options. <br>
+                - Supports Multiplayer. <br>
+                </span>
+            </p>
+            <div class="project-downloads">
+                <h1>Downloads</h1>
+                <a href="../downloads/#" download>⠀⠀⠀Datapack⠀⠀⠀</a> 
+                <a href="../downloads/#" download>Resource Pack</a>
+            </div>
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a><br />This work is licensed under a <a  target=”_blank” rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer">
+        <p class="footer-center">Website coded and designed by Snowfro</p>
+    </div>
+
+    <script>
+        let mybutton = document.getElementById("topbutton");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 220 || document.documentElement.scrollTop > 220) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
