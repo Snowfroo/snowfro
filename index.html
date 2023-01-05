@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/png" href="img/icons/snowflake.png" />
+    <title>Snowfro</title>
+</head>
+
+<body>
+
+    <!-- header -->
+
+    <button data-aos="fade-in" onclick="topFunction()" id="topbutton" title="Go to top">To the sky!</button>
+
+    <div class="header" id="main">
+        <h1>Snowfro</h1>
+        <div class="menubar">
+            <a href="#about">About me</a>
+            <a href="#projects">Projects</a>
+            <a href="#graphics">Graphics</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- about me -->
+
+    <div class="transition transition1"></div>
+    <div class="about" id="about">
+        <div class="about-box about-box-1" data-aos="fade-up">
+            <h1>When it comes to Minecraft,<br> <span>I've got lots of experience.</span></h1>
+        </div>
+        <div class="about-box about-box-2">
+            <img src="img/poses/minecart2.png">
+        </div>
+        <div class="about-box about-box-3">
+            <img src="img/poses/commandblock.png">
+        </div>
+        <div class="about-box about-box-4" data-aos="fade-up">
+            <h1>Resource packs and datapacks that I make, <span>bring more fun to the game.</span></h1>
+        </div>
+        <div class="about-box about-box-5" data-aos="fade-up">
+            <h1>I also produce videos and tutorials for<span> YouTube focused on minecraft.</span>
+        </div>
+        <div class="about-box about-box-6">
+            <img src="img/poses/camera.png">
+        </div>
+    </div>
+
+    <!-- projects -->
+
+    <div class="projects-wrapper">
+        <div class="transition transition2"></div>
+        <div class="projects" id="projects">
+            <h1>Projects<h1>
+                    <div class="project-boxes" data-aos="fade-up">
+                        <a href="pages/charles.html">
+                            <div class="project-box">
+                                <img src="img/projects/charles.png">
+                                <p>Choo Choo Charles</p>
+                            </div>
+                        </a>
+                        <a href="pages/blockmorphs.html">
+                            <div class="project-box">
+                                <img src="img/projects/morph.png">
+                                <p>Block Morphs</p>
+                            </div>
+                        </a>
+                        <a href="pages/pvppack.html">
+                            <div class="project-box">
+                                <img src="img/projects/pack.png">
+                                <p>PVP Texture Pack</p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" class="coming-soon">
+                            <div class="project-box">
+                                <img src="img/projects/coming-soon.png">
+                                <p>Coming Soon</p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" class="coming-soon">
+                            <div class="project-box">
+                                <img src="img/projects/coming-soon.png">
+                                <p>Coming Soon</p>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" class="coming-soon">
+                            <div class="project-box">
+                                <img src="img/projects/coming-soon.png">
+                                <p>Coming Soon</p>
+                            </div>
+                        </a>
+                    </div>
+        </div>
+    </div>
+
+    <!-- graphics -->
+    <div class="transition transition1"></div>
+    <div class="graphics" id="graphics">
+        <h1>Graphics</h1>
+        <p>I specialize in making professional YouTube thumbnails, <br> and have made more than one hundred so far.</p>
+        <div class="swiper-container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/graphics/1.jpg"></div>
+                    <div class="swiper-slide"><img src="img/graphics/2.jpg"></div>
+                    <div class="swiper-slide"><img src="img/graphics/3.jpg"></div>
+                    <div class="swiper-slide"><img src="img/graphics/4.jpg"></div>
+                    <div class="swiper-slide"><img src="img/graphics/5.jpg"></div>
+                    <div class="swiper-slide"><img src="img/graphics/6.jpg"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="graphics-button">
+            <a href="pages/gallery.html">View full gallery</a>
+        </div>
+    </div>
+
+    <!-- contact -->
+
+    <div class="contact" id="contact">
+        <div class="transition transition2"></div>
+        <h1>Contact</h1>
+        <div class="contact-profile">
+            <img src="img/icons/logo.png">
+            <p>Here are some platforms you can reach me at.</p>
+        </div>
+        <div class="contact-boxes">
+            <a href="https://www.youtube.com/@Snowfro/videos" target=”_blank class="contact-youtube">YouTube</a>
+            <a href="javascript:void(0)" class="contact-discord" id="element1"
+                onClick="javascript:changeText(1)">Discord</a>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer">
+        <p class="footer-center">Website coded and designed by Snowfro</p>
+    </div>
+
+    <script>
+        AOS.init({
+            disable: window.innerWidth < 480
+        });
+    </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            effect: 'fade',
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            dynamicBullets: true,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    </script>
+    <script>
+        function changeText(idElement) {
+            var element = document.getElementById('element' + idElement);
+            if (idElement === 1 || idElement === 2) {
+                if (element.innerHTML === 'Discord') element.style.padding = '10px 30px';
+                if (element.innerHTML === 'Discord') element.innerHTML = 'Snowfro#8267';
+                else {
+                    element.innerHTML = 'Discord';
+                    element.style.padding = '10px 90px';
+                }
+            }
+        }
+    </script>
+    <script>
+        let mybutton = document.getElementById("topbutton");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000
+        }
+        );
+    </script>
+</body>
+
+</html>
